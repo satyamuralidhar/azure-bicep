@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "storagedev984"
+        },
+        "sku_name": {
+            "value": "Standard_LRS"
+        },
+        "blobAccess": {
+            "value": false
+        },
+        "accessTier": {
+            "value": "Hot"
+        }
+        
+            
+    }
+}
+
+/*az deployment group create --resource-group ansible --name rollout01 --template-file main.bicep --parameters params.json*/
